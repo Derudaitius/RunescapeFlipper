@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="MainMenu" alignment="CENTER" prefHeight="768.0" prefWidth="1366.0" spacing="20.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.runescape.FlipperController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Label prefHeight="41.0" prefWidth="490.0" text="Runescape Flipping Utility" textAlignment="CENTER">
+      <VBox.margin>
+         <Insets bottom="75.0" />
+      </VBox.margin>
+      <font>
+         <Font name="Arial" size="42.0" />
+      </font>
+   </Label>
+   <Button alignment="CENTER" mnemonicParsing="false" onAction="#onByVolumeClick" prefHeight="50.0" prefWidth="150.0" text="By Volume" textAlignment="CENTER" textFill="#4d4d4d">
+      <font>
+         <Font name="Arial" size="18.0" />
+      </font>
+   </Button>
+   <Button alignment="CENTER" mnemonicParsing="false" onAction="#onByProfitClick" prefHeight="50.0" prefWidth="150.0" text="By Profit / Item" textAlignment="CENTER" textFill="#4d4d4d">
+      <font>
+         <Font name="Arial" size="18.0" />
+      </font>
+   </Button>
+   <Button alignment="CENTER" mnemonicParsing="false" onAction="#onSearchClick" prefHeight="50.0" prefWidth="150.0" text="Search Item" textAlignment="CENTER" textFill="#4d4d4d">
+      <font>
+         <Font name="Arial" size="18.0" />
+      </font>
+   </Button>
+   <effect>
+      <Blend />
+   </effect>
+</VBox>
