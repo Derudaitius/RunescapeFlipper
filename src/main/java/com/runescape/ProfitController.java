@@ -34,9 +34,9 @@ public class ProfitController implements Initializable {
 
     // Store the current spinner value
     private BigInteger currentSpinnerValue; // Initialize with a default value
-    private BigInteger min = BigInteger.ONE;
-    private BigInteger max = new BigInteger("5000000000"); // 5 billion initial max
-    private RunescapeAPIService apiService;
+    private final BigInteger min = BigInteger.ONE;
+    private final BigInteger max = new BigInteger("5000000000"); // 5 billion initial max
+    private final RunescapeAPIService apiService;
 
     @FXML
     private TableView<Item> tableView;
